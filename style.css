@@ -1,0 +1,1176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.75);
+    padding-left: 182px;
+    /*box-shadow: inset 170px -188px 774px 647px rgb(178, 116, 42, 0.75);*/
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background: #888;
+    padding: 19px 0;
+    z-index: 999;
+    opacity: 1;
+    height: 80px;
+    padding-top: 40px;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(178, 116, 42);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir>i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo {
+    background-color: #b2742a;
+}
+
+ul li.item-menu:hover {
+    background: #b2742a;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 52px;
+    margin-left: 10px;
+}
+
+#horario {
+    font-size: 40px;
+}
+
+#dia {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+h1 {
+    position: absolute;
+    top: 255px;
+    left: 541px;
+    font-size: 124px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h2 {
+    margin-left: auto;
+    margin-bottom: 30px;
+    /* text-decoration: underline; */
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+
+.teste {
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    animation: ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 670px;
+    opacity: 0.3;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.logo {
+    width: 160px;
+    position: absolute;
+    top: 46px;
+    left: 223px;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset 0 0 10px 2px #ffffff;*/
+}
+
+.perfil {
+    position: absolute;
+    right: 55px;
+    border: none;
+    top: 70px;
+    flex: 1 1 300px;
+    width: 382px;
+    margin-right: 5px;
+    border-radius: 20px;
+
+}
+
+img {
+    width: 300px;
+    border: 5px solid #b2742a;
+
+}
+
+.enviar-email {
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.enviar-email button {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    margin-left: 30px;
+    padding-left: 300px;
+    background: #40BB15;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 174px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+#form1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 40%;
+    height: auto;
+
+}
+
+.form11 {
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -7%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+    display: contents;
+    margin-right: 30px;
+}
+
+#form2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    gap: 5px;
+    text-shadow: 1px 1px #ffff;
+    font-size: 45px;
+    background-color: rgb(178, 116, 42);
+
+}
+
+.input {
+    border: none;
+    border-radius: 3%;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+select {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.agendamento-online {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 26px;
+    margin-top: -89px;
+
+
+}
+
+.botão {
+    background: #40BB15;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 174px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+
+}
+
+.formn-div {
+    padding-left: 60px;
+}
+
+.responsive-form input,
+.responsive-form textarea {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: larger;
+    padding: 20px;
+}
+
+.responsive-form textarea {
+    margin-right: -86px;
+
+
+}
+
+.responsive-form button {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.responsive-form-button-enviar {
+    text-align: center;
+    background: #40BB15;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 174px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.img-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-right: -215px;
+    margin-left: -108px;
+}
+
+.img-video-servicos {
+    width: 200px;
+    border: 5px solid #b2742a;
+}
+
+.item {
+    flex: 0 0 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #b2742a;
+}
+
+.item-p-principal {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+
+#serviços {
+    text-align: center;
+    font-size: 48px;
+    color: #000;
+    text-shadow: 2px 2px #ffff;
+
+}
+
+h5 {
+    font-size: 30px;
+}
+
+#mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid #000;
+    gap: 100px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Proporção de aspecto 16:9 (dividir a altura pela largura e multiplicar por 100) */
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-barbeiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+}
+
+.img-barbeiros img {
+    border: 5px solid #b2742a;
+
+}
+
+.nomes-dos-barbeiros {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
+.conhecendo-os-barbeiros {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    
+}
+
+.carousel-navigation {
+    color: #ffffff
+}
+
+.img-salao {
+    display: inline-flex;
+    margin: 10px;
+}
+
+.salao-barbearia {
+    display: flex;
+}
+
+.salao-barbearia img {
+    width: 500px;
+    border: 5px solid #b2742a;
+}
+
+#Sobre {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-bottom: 100px;
+    background-color: rgb(178, 116, 42);
+
+}
+
+.Sobre {
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+.p-sobre {
+
+    text-align: center;
+    color: #ffff;
+    font-size: 36px;
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporção 16:9 (divida a altura pelo largura e multiplique por 100 para obter a porcentagem) */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 270%;
+}
+
+.salao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salao-item {
+    width: 100%;
+    max-width: 800px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporção de 16:9 (dividir a altura pelo width e multiplicar por 100) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 80;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper video::-webkit-media-controls {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.video-wrapper video::-webkit-media-controls-enclosure {
+    max-height: 100%;
+}
+
+
+
+.carousel-manual {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-manual .slide-servicos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-manual .slide-servicos.active {
+    opacity: 1;
+}
+
+.carousel-manual img {
+    object-fit: cover;
+}
+
+.carousel-manual h5 {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.img-do-carrosel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 492px;
+    margin-top: 100px;
+}
+
+.buttom-do-slide-servicos {
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+.principais-serviços p {
+    font-size: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.botoes {
+    font-size: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #b2742a;
+    color: whiter;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.buttom-do-slide-servicos>button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+section.parallax {
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+
+
+}
+
+section .parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background-color: linear-gradient(to bottom rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+    background: -moz-linear-gradient(to bottom rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+}
+
+.parallax-1 {
+    background-image: linear-gradient(to top, #000000, #ffffff);
+}
+
+
+
+section.parallax-1 {
+    background-image: url(./img-salão/a75efedb-bd20-4a3a-b730-26d0d0d25a8a.jpg);
+    /*box-shadow: inset 170px -188px 774px 647px rgb(178, 116, 42, 0.5);*/
+    box-shadow: inset 0 -899px 0 590px rgb(0, 0, 0, 0.75);
+
+
+}
+
+section.parallax-2 {
+    background-image: url(./img-salão/dbc31c0c-5f88-47ab-a3a0-413a9c91c7f0.jpg);
+    /* box-shadow: inset 170px -188px 774px 647px rgb(178, 116, 42, 0.5);*/
+    box-shadow: inset 0 -899px 0 590px rgb(0, 0, 0, 0.75);
+
+}
+
+section.parallax-3 {
+    background-image: url(./img-salão/img-de-fundo.jpg);
+    padding-bottom: 250px;
+    /* box-shadow: inset 170px -188px 774px 647px rgb(178, 116, 42, 0.5);*/
+    box-shadow: inset 0 -899px 0 590px rgb(0, 0, 0, 0.75);
+}
+
+.lista {
+    margin-left: 519px;
+    margin-right: 530px;
+    color: #FFFFFF;
+    list-style: none;
+    border-radius: 5%;
+    font-size: 28px;
+}
+
+.Informaçôes {
+    text-shadow: 2px 2px #000;
+    color: #FFFFFF;
+
+}
+
+h6 {
+    font-size: 30px;
+}
+
+.btn-expandir>i {
+    font-size: 45px;
+}
+
+nav.menu-lateral {
+    width: 180px;
+
+}
+
+ul li.item-menu a {
+    font-size: 24px;
+}
+
+ul li.item-menu {
+    transition: .2s;
+    margin-bottom: 100px;
+}
+
+nav.menu-lateral.expandir {
+    width: 500px;
+}
+
+.WhatsApp {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    border: none;
+}
+
+.carousel-container {
+    background-color: rgb(178, 116, 42);
+}
+
+.img-curso {
+    background-color: rgb(178, 116, 42);
+}
+
+.escola {
+    background-color: rgb(178, 116, 42);
+}
+
+.container-p {
+    background-color: rgb(178, 116, 42);
+}
+
+#Agendamento {
+    background-color: rgb(178, 116, 42);
+    margin-top: 90px;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.imagens-com-sombra{
+    box-shadow: 10px 20px black;
+}
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+
+
+
+@media (max-width: 768px) {
+    .item {
+        flex-basis: 50%;
+    }
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    border: 3px solid#b2742a;
+}
+
+
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 33.3333%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    text-align: center;
+    flex: 1;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.photo img {
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.list {
+    flex: 1;
+    text-align: center;
+    background: aqua;
+    margin-left: 519px;
+    margin-right: 530px;
+    color: #000;
+    list-style: none;
+
+}
+
+.container-p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .photo,
+    .list {
+        flex: none;
+        margin-top: 60px;
+        margin-bottom: 55px;
+        list-style: none;
+    }
+}
+
+
+.WhatsApp:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .8;
+}
+
+.WhatsApp:active {
+    opacity: .3;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Informaçôes {
+    color: #fff
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+.inst {
+    border: none;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px
+}
+
+.face {
+    border: none;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px
+}
+
+#mostrar {
+    display: none;
+}
+
+#passar_mouse:hover #mostrar {
+    display: block;
+}
+
+
+.img-curso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-curso {
+    flex: 0 0 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item video {
+    max-width: 100%;
+    height: auto;
+}
+
+.curso-paragrafo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+
+
+
+
+@media (max-width: 968px) {
+    .item img {
+        flex-basis: 30%;
+    }
+
+    /*.slide img{
+        margin-left:80px;
+        width: 55%;
+    }*/
+
+    .perfil {
+        width: 200px;
+        margin-top: 78px;
+        margin-right: -4px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-top: -130px;
+        margin-left: -492px;
+    }
+
+
+    input {
+        display: block;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-radius: 5px;
+        height: 50px;
+        width: 250px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+    }
+
+    textarea {
+        display: block;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-radius: 5px;
+        height: 100px;
+        width: 352px;
+        margin-bottom: 20px;
+    }
+
+
+    #agendamentos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+
+        width: 500px;
+    }
+
+    #mapa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-top: solid #000;
+        gap: 100px;
+    }
+
+    .img-barbeiros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .conhecendo-os-barbeiros {
+        font-size: 38px;
+        margin-right: 27px;
+    }
+
+    .p-sobre {
+        font-size: initial;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #sobre {
+        font-size: 48px;
+    }
+
+    .salao-barbearia img {
+        width: 250px;
+        margin-left: -10;
+        margin-top: 15px;
+    }
+
+    .salao-barbearia {
+        display: inline-block;
+    }
+
+    .video-container video {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+        height: 270%;
+
+    }
+
+    nav.menu-lateral {
+        width: 30px;
+
+    }
+
+    ul li.item-menu a .icon>i {
+        font-size: 15px;
+        margin-left: 3px;
+    }
+
+    .btn-expandir>i {
+        margin-left: -14px;
+        font-size: 33px;
+    }
+
+    .principais-serviços p {
+        font-size: 40px;
+        margin-right: 23px;
+
+    }
+
+    body {
+        padding-left: 32px;
+        /* box-shadow:inset 5px -33px 78px 85px rgb(178, 116, 42, 0.75);*/
+    }
+
+    .logo {
+        top: 23px;
+        left: 54px;
+        width: 90px;
+    }
+
+    .photo {
+        margin-left: -180px;
+    }
+
+    .container {
+        margin-left: 182px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .img-servicos {
+        width: 260px;
+        margin-right: 0;
+        margin-left: 22px;
+    }
+
+    .teste {
+        height: 461px;
+
+    }
+
+    .continer-p {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .img-do-carrosel {
+        margin-bottom: 280px;
+    }
+
+    .botoes {
+        font-size: 20px;
+    }
+
+    #form2 {
+        font-size: 22px;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    #horario {
+        font-size: 20px;
+        width: 90px;
+    }
+
+    #dia {
+        font-size: 20px;
+        width: 160px;
+    }
+
+    .agendamento-online {
+        font-size: 30px;
+        margin-right: 27px;
+    }
+
+    .nomes-dos-barbeiros {
+        font-size: 20px;
+    }
+
+    .img-barbeiros img {
+        width: 200px;
+    }
+
+    nav.menu-lateral.expandir {
+        width: 30px;
+    }
+
+    ul li.item-menu {
+
+        margin-bottom: 20px;
+    }
+
+    nav.menu-lateral {
+        width: 190px;
+    }
+
+    ul li.item-menu a .txt-link {
+        margin-left: 33px;
+        opacity: 1;
+        FONT-SIZE: 14px;
+    }
+
+    .inst {
+        width: 45px;
+    }
+
+    .face {
+        width: 45px;
+
+    }
+
+    .WhatsApp {
+        width: 45px;
+        height: 45px;
+        bottom: 94px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    .curso-paragrafo {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
+
+    .buttom-do-slide-servicos {
+        margin-top: -138px;
+    }
+
+}
